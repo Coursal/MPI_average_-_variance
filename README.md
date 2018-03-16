@@ -11,6 +11,6 @@ Guide to compile and run:
 2. sudo apt-get install gcc
 3. sudo apt-get install libmpich2-dev
 4. mpicc -o ave_var ave_var.c
-5. mpiexec -n 4 ./ave_var
+5. mpiexec -n <<number of tasks>> ./ave_var
 
 Tested on Lubuntu 12.04 (Precise Pangolin) on a virtual machine.
