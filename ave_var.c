@@ -62,7 +62,7 @@ int main(int argc, char** argv)
 		        
 			for (i=0; i<num; i++)
 				X_local[i]=X[i]; 	
-	    }
+	    	}
 		else  																		//if you are a cpu worker
 	   	{
 			MPI_Recv(&n, 1, MPI_INT, 0, tag1, MPI_COMM_WORLD, &status);				//receive the total number of X numbers
